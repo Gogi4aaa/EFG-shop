@@ -1,0 +1,139 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.width-75{
+    width: 60%;
+}
+.borderTop{
+    border-top: 3px solid #0b203e;
+}
+.logo{
+    width: 40%;
+    height:128px;
+}
+.navbar button{
+    color: #92c5fc;
+}
+.nav-link{
+    color: white;
+    font-size: 1.3rem;
+}
+.nav-link:hover{
+    color: #92c5fc;
+}
+.navbar-brand:hover{
+    opacity: 0.8;
+}
+.background{
+    background: #061526;
+    min-height: 75vh;
+}
+.background-menu{
+    background: #040c18;
+}
+
+
+.vm-height{
+    height: 500px;
+}
+.carousel-control-next{
+    width: 5%!important;
+}
+.carousel-control-prev{
+    width: 5%!important;
+}
+
+.footer{
+    background:#040c18;
+    height: 15rem;
+    display: flex;
+}
+.height-100{
+    height: 100px;
+}
+
+.vm-right-div{
+    border: 2px solid white;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.vm-right-color{
+    color:#2f435a;
+}
+.vm-right ul{
+    list-style-type: '✓';
+}
+.vm-right ul li{
+    margin-top: 1rem;
+}
+.vm-right ul li:nth-child(4){
+    padding-left: 2rem;
+}
+
+.borderAll{
+    border-top: 2px solid #92c5fc;
+}
+
+.width{
+    width: 50%;
+}
+@media (max-width:460px){
+    .vm-height{
+        height: 300px;
+    }
+    .vm-right ul li:nth-child(4){
+        padding-left: 0.5rem;
+    }
+}
+@media (min-width:768px){
+    .logo{
+        width: 40%;
+        height:170px;
+    }
+}
+@media (max-width:991px){
+    .nav-item{
+        font-size: 1.3rem;
+        border-bottom: 2px solid white;
+        width: 40%;
+        margin: 0 auto;
+    } 
+}
+@media (min-width:992px){
+    .logo{
+        width: 30%;
+    }
+}
+@media (max-width:1200px){
+    /* .width{
+        width: 100%;
+    } */
+}
+@media (min-width:1200px){
+    .logo{
+        width: 25%;
+    }
+    .vm-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:1400px){
+    .logo{
+        width: 15%;
+    }
+}

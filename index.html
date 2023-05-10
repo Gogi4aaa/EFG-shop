@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EFG - everything for gamers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>     
+</head>
+
+<body>
+    <div class="container-fluid background-menu">
+    <div class="container-fluid ">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html"><img
+                            src="https://cdn.discordapp.com/attachments/1022221790682038433/1101262601805107252/Red_White_Simple_Gaming_Logo.png"
+                            alt=""></a>
+                </div>
+                <div class="d-flex menu-text justify-content-center align-items-center width-75 d-none d-lg-flex">
+                    <!-- <h1 class="text-white fs-2">EFG STORE EVERYTHING FOR ONE GAMER</h1> -->
+                    <div class="img-div">
+                        <img src="https://cdn.discordapp.com/attachments/1022221790682038433/1103361674242695329/Red_Balck_Modern_Game_Controller_Instagram_Post_1080_500_.png" class="" alt="">
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fs-1 text-white"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center mb-5 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Начало</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Регистрация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Вход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </div>
+
+    <div class="container-fluid background pt-4">
+        <div class="container search-bar d-flex align-items-center p-4">
+            <div class="search-select">
+                  <select name="" id="select" class="text-center">
+                    <option value="1">Всички</option>
+                    <option value="2">Периферия</option>
+                    <option value="3">Компютри</option>
+                </select>
+            </div>
+            <div class="search-menu">
+                <input type="text" oninput="filterItems(this)">
+                    <span class="fs-2 text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+        </div>
+
+        <div class="container mt-5 all">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span id="announcement" class="paragraph text-white fs-1 m-0">Промо Обяви</span>
+                    <div id="announcement-border" class="announcement-margin mb-5"></div>
+                </div>
+            </div>
+            <div class="row pb-4 mt-5 m-0 gy-5 gx-5">
+                <div class="col-12 col-md-6 col-xl-4 p-0 mt-3 pe-md-2" data-category="gadgets">
+                    <div class="announcement-border p-3">
+                        <div class="announcement-height">
+                            <img src="https://media.steelseriescdn.com/thumbs/catalog/items/64865/2e6a305c2d184e37901724681b50552d.png.1400x1120_q100_crop-fit_optimize.png" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-white fs-4" id="text">APEX PRO TKL WIRELESS</p>
+                            <p class="font-size-city announcement-city-color m-0">Град София</p>
+                            <p class="m-0 text-white font-size-viewed">Преглеждания: 4</p>
+                            <div class="text-end">
+                                <p class="m-0 mb-2 fs-3 text-danger">Цена: 350лв</p>
+                            </div>
+                            <div class="mb-1">
+                                <button id="keyboard" class="w-100 fw-bold">Виж Повече</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-0 mt-3 pe-md-2 pe-xl-2" data-category="gadgets">
+                    <div class="announcement-border p-3">
+                        <div class="announcement-height">
+                            <img src="https://resource.logitechg.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g502x-plus/gallery/g502x-plus-gallery-2-white.png?v=1" alt="">
+                        </div>
+                        <div class="mt-5 ">
+                            <p class="text-white fs-4"data-name="name" id="text1">Мишка G502 X PLUS</p>
+                            <p class="font-size-city announcement-city-color m-0">Град Враца</p>
+                            <p class="m-0 text-white font-size-viewed">Преглеждания: 2</p>
+                            <div class="text-end">
+                                <p class="m-0 mb-2 fs-3 text-white">Цена: 319лв</p>
+                            </div>
+                            <div class="mb-1">
+                                <button id="mouse" class="w-100 fw-bold">Виж Повече</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-0 mt-3 pe-md-2 pe-xl-0" data-category="gadgets">
+                    <div class="announcement-border p-3">
+                        <div class="announcement-height">
+                            <img src="Screenshot_58-removebg-preview.png" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-white fs-4" data-name="name" id="text2">Микрофон Blue - Yeticaster</p>
+                            <p class="font-size-city announcement-city-color m-0">Град Пловдив</p>
+                            <span class="m-0 text-white font-size-viewed">Преглеждания:</span>
+                            <span class="m-0 text-white font-size-viewed">7</span>
+                            <div class="text-end">
+                                <p class="m-0 mb-2 fs-3 text-white">Цена: 490лв</p>
+                            </div>
+                            <div class="mb-1">
+                                <button id="microphone" class="w-100 fw-bold">Виж Повече</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-0 mt-3 pe-md-2 pe-xl-2" data-category="pc">
+                    <div class="announcement-border p-3">
+                        <div class="announcement-height">
+                            <img src="Screenshot_68-removebg-preview.png" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-white fs-4"data-name="name" id="text3">Лаптоп Titan GT77 HX 13V</p>
+                            <p class="font-size-city announcement-city-color m-0">Град Варна</p>
+                            <span class="m-0 text-white font-size-viewed">Преглеждания:</span>
+                            <span class="m-0 text-white font-size-viewed">20</span>
+                            <div class="text-end">
+                                <p class="m-0 mb-2 fs-3 text-white">Цена: 11000лв</p>
+                            </div>
+                            <div class="mb-1">
+                                <button id="laptop" class="w-100 fw-bold">Виж Повече</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-0 mt-3 pe-md-2" data-category="gadgets">
+                    <div class="announcement-border p-3">
+                        <div class="announcement-height">
+                            <img src="Screenshot_65-removebg-preview.png" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-white fs-4" data-name="name" id="text4">Монитор Gaming ASUS TUF</p>
+                            <p class="font-size-city announcement-city-color m-0">Град Варна</p>
+                            <span class="m-0 text-white font-size-viewed">Преглеждания:</span>
+                            <span class="m-0 text-white font-size-viewed">3</span>
+                            <div class="text-end">
+                                <p class="m-0 mb-2 fs-3 text-white">Цена: 706лв</p>
+                            </div>
+                            <div class="mb-1">
+                                <button id="monitor" class="w-100 fw-bold">Виж Повече</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-0 mt-3 pe-xl-0 pe-md-2" data-category="pc">
+                    <div class="announcement-border p-3">
+                        <div class="announcement-height">
+                            <img src="Screenshot_62-removebg-preview.png" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-white fs-4" data-name="name" id="text5">Kомпютър Gaming Acer</p>
+                            <p class="font-size-city announcement-city-color m-0">Град Варна</p>
+                            <span class="m-0 text-white font-size-viewed">Преглеждания:</span>
+                            <span class="m-0 text-white font-size-viewed">15</span>
+                            <div class="text-end">
+                                <p class="m-0 mb-2 fs-3 text-white">Цена: 2340лв</p>
+                            </div>
+                            <div class="mb-1">
+                                <button id="pc" class="w-100 fw-bold">Виж Повече</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container-fluid footer pb-4 pt-4">
+            <div class="container pt-5 pb-5 d-flex justify-content-center align-items-center">
+                <p class="m-0 text-white fs-3">Copyright &copy; 2023 EFG store</p>
+            </div>
+        </div>   
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+    function PHover(){
+        let text = document.getElementById("announcement");
+    let border = document.getElementById("announcement-border");
+    text.addEventListener("mousemove", function(){
+        border.style.border = '2px solid #92c5fc'
+    })
+    text.addEventListener("mouseout", function(){
+        border.style.border = '2px solid #0b213f'
+    })
+    }
+    PHover();
+
+    $(function(){
+        $('#select').on("change", function(){
+            const el = $(this).val();
+            console.log(el)
+            if(el == "1"){
+                $('[data-category]').show();
+            }
+            else if(el == "2"){
+                $('[data-category][data-category="gadgets"]').show();
+                $('[data-category][data-category!="gadgets"]').hide();
+            }
+            else if(el == "3"){
+                $('[data-category][data-category="pc"]').show();
+                $('[data-category][data-category!="pc"]').hide();
+            }
+           
+        
+        })
+        
+        $("#monitor").click(function(){
+            window.location = 'monitor.html';
+        })
+        $("#keyboard").click(function(){
+            window.location = 'keyboard.html';
+        })
+        $("#mouse").click(function(){
+            window.location = 'mouse.html';
+        })
+        $("#laptop").click(function(){
+            window.location = 'laptop.html';
+        })
+        $("#microphone").click(function(){
+            window.location = 'microphone.html';
+        })
+        $("#pc").click(function(){
+            window.location = 'pc.html';
+        })
+    });
+    //  let items = [$('#text').html(), $('#text1').html(), $('#text2').html(),
+    //   $('#text3').html(), $('#text4').html(), $('#text5').html()]
+    //  console.log(items)
+    // function filterItems(el) {
+    //     let input = el.value;
+    //     console.log(input);
+    //     let filteredItems = items.filter(i => (i.includes(input)))
+    //     console.log(filteredItems)
+    //     // $('.all').append(filteredItems)  
+        
+    // }
+    let items = [{name: $('#text').html(), second:$('#text1').html()}]
+    $('.all').append(items.name);
+    console.log(items)
+    function filterItems(el) {
+    let input = el.value;
+    console.log(input);
+    let filteredItems = items.filter(i => i.include(input))
+    }
+</script>
+
+</body>
+
+</html>
