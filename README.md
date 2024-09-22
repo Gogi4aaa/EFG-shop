@@ -25,7 +25,7 @@ Products Details Page:  <br/>
 ![image](https://github.com/user-attachments/assets/43fb19e1-913e-4674-bfe6-ace01049e350)  <br/>
 
 🔮 Future Enhancements <br/>
-      ○ Some ideas for future improvements: <br/>
-      ○ Implement a product search feature. <br/>
-      ○ Add a product filter for categories and prices. <br/>
-      ○ Implement user authentication and product checkout. <br/>
+      • Some ideas for future improvements: <br/>
+      • Implement a product search feature. <br/>
+      • Add a product filter for categories and prices. <br/>
+      • Implement user authentication and product checkout. <br/>
